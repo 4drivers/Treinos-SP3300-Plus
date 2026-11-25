@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#123c32">
+<meta name="description" content="Minha Ficha SP-3300 Pró — Fase 2: musculação, bicicleta e evolução.">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon-192.png">
+<title>Minha Ficha SP-3300 Pró — Fase 2</title>
+<style>
+:root{--bg:#0b1411;--card:#14211c;--ink:#edf5ef;--muted:#a5b6aa;--green:#75c69a;--green2:#1e3d30;--line:#2b4035;--red:#ff8888;--shadow:0 10px 28px #0005}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#152820,#0b1411 55%);color:var(--ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+header{background:linear-gradient(135deg,#071c16,#174b38);color:#f4fff7;padding:22px 18px 18px;position:sticky;top:0;z-index:3;box-shadow:0 5px 22px #0008;border-bottom:1px solid #315744}
+header .eyebrow{font-size:11px;letter-spacing:.12em;text-transform:uppercase;opacity:.8}h1{font-size:22px;margin:4px 0 2px}header p{margin:0;font-size:13px;opacity:.85}
+.wrap{max-width:860px;margin:auto;padding:14px 14px 92px}.tabs{display:flex;gap:7px;overflow:auto;padding:12px 0 2px;position:sticky;top:105px;background:#0b1411ed;backdrop-filter:blur(12px);z-index:2}
+.tab{border:1px solid var(--line);background:#17251f;border-radius:999px;padding:9px 13px;font-weight:650;white-space:nowrap;color:var(--muted)}.tab.active{background:#75c69a;color:#092016;border-color:#75c69a}
+.panel{display:none}.panel.active{display:block}.card{background:linear-gradient(160deg,#172720,#111d18);border:1px solid var(--line);border-radius:17px;padding:16px;margin:12px 0;box-shadow:var(--shadow)}
+h2{font-size:19px;margin:4px 0 10px}h3{font-size:16px;margin:0 0 6px}.muted,.hint{color:var(--muted);font-size:13px}
+.hero{background:linear-gradient(135deg,#173c2d,#1d3027);border:1px solid #315b45;border-radius:16px;padding:16px;margin:12px 0}.hero strong{color:#9de2b6}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.field{display:flex;flex-direction:column;gap:4px;margin:8px 0}.field label{font-size:12px;color:var(--muted);font-weight:650}
+.field input,.field select,.field textarea,.logrow input{width:100%;border:1px solid #385044;border-radius:10px;padding:11px;background:#0d1914;color:var(--ink);font:inherit}.field textarea{min-height:76px;resize:vertical}
+.btn{border:0;border-radius:11px;padding:11px 14px;background:#75c69a;color:#092016;font-weight:750;font-size:14px;cursor:pointer}.btn.secondary{background:#263d31;color:#c8f0d6;border:1px solid #3d614b}.btn.danger{background:#512a2a;color:#ffd0d0;border:1px solid #794242}.btn.small{padding:7px 10px;font-size:12px}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.exercise{border:1px solid #30473a;border-radius:15px;padding:13px;margin:11px 0;background:linear-gradient(150deg,#1a2b23,#111c17)}
+.exhead{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.tag{font-size:11px;padding:4px 8px;border-radius:99px;background:#254a36;color:#baf0ca;font-weight:700}
+.exercise p{margin:6px 0;font-size:13px}.exercise details{margin-top:8px;color:var(--muted);font-size:13px}.exercise summary{cursor:pointer;color:#8cdbab;font-weight:700}
+.check{display:flex;align-items:center;gap:7px;font-size:13px;margin-top:9px}.check input{width:18px;height:18px;accent-color:#75c69a}
+.logrow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}.logrow input{min-width:0;padding:9px}
+.metric{background:#1c3026;border:1px solid #2e4a39;border-radius:12px;padding:11px}.metric b{font-size:19px;display:block}
+.history{border-top:1px solid var(--line);padding:11px 0;display:flex;justify-content:space-between;gap:10px}.history:first-child{border-top:0}.history p{margin:2px 0}
+.notice{border-left:4px solid #d3a34d;background:#332817;padding:12px;border-radius:8px;font-size:13px;color:#f6dfb5}.weekbar{height:9px;background:#26382e;border-radius:9px;overflow:hidden}.weekbar span{display:block;height:100%;background:#75c69a}
+.smallmuted{font-size:11px;color:var(--muted)}footer{text-align:center;color:var(--muted);font-size:11px;padding:18px}
+.exercise-art{height:112px;border-radius:11px;background:radial-gradient(circle at 50% 45%,#254b38,#13231b 70%);display:flex;align-items:center;justify-content:center;margin:9px 0 11px}
+.exercise-art svg{height:100%;max-width:100%;width:230px}.load-tip{font-size:12px;color:#b9e9c8;background:#193426;border:1px solid #315c42;border-radius:10px;padding:9px;margin-top:9px}
+@media(max-width:520px){.grid{grid-template-columns:1fr 1fr}.tabs{top:105px}.wrap{padding-left:11px;padding-right:11px}.card{padding:13px}.logrow{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style>
+</head>
+<body>
+<header><div class="eyebrow">Programa de 12 semanas</div><h1>Minha Ficha SP-3300 Pró</h1><p>Fase 2 · Musculação + bicicleta · Offline</p></header>
+<div class="wrap">
+<nav class="tabs" aria-label="Seções">
+<button class="tab active" data-tab="inicio">Início</button><button class="tab" data-tab="treinos">Treinos</button><button class="tab" data-tab="bike">Bicicleta</button><button class="tab" data-tab="avaliacao">Avaliação</button><button class="tab" data-tab="historico">Histórico</button><button class="tab" data-tab="backup">Backup</button>
+</nav>
+<section id="inicio" class="panel active">
+<div class="hero"><strong>Um dia de treino, um dia de recuperação.</strong><p>Alterne A → descanso → B → descanso. O ciclo continua independentemente do dia da semana. A bicicleta entra como complemento, sem atrapalhar a recuperação.</p></div>
+<div class="card"><h2>Seu ciclo atual</h2><div class="grid"><div class="metric"><span class="muted">Próxima sessão</span><b id="nextSession">Treino A</b></div><div class="metric"><span class="muted">Semana do plano</span><b id="weekNow">1 / 12</b></div></div><p class="muted" id="cycleHint">Comece pelo Treino A. Depois faça um dia de descanso.</p><div class="weekbar"><span id="weekProgress" style="width:0%"></span></div><div class="actions"><button class="btn" onclick="showTab('treinos')">Abrir treinos</button><button class="btn secondary" onclick="showTab('avaliacao')">Fazer avaliação</button></div></div>
+<div class="card"><h2>Orientações importantes</h2><ul class="muted"><li>Nas primeiras sessões, escolha cargas que permitam executar todas as repetições com técnica controlada, terminando com cerca de 3 repetições “na reserva”.</li><li>Não teste carga máxima. Aumente apenas quando completar o topo da faixa de repetições com boa técnica em todas as séries.</li><li>Interrompa o exercício se houver dor aguda, tontura, falta de ar fora do esperado ou mal-estar.</li><li>Se estiver muito cansado ou dolorido, adie a sessão; descanso também faz parte do treino.</li></ul></div>
+<div class="notice">Esta ficha é uma programação geral e conservadora, não uma avaliação médica. Se tiver lesão, condição clínica, dor persistente ou dúvida sobre segurança, procure orientação profissional antes de avançar.</div>
+</section>
+<section id="treinos" class="panel">
+<div class="card"><h2>Treinos A/B — corpo inteiro</h2><p class="muted">A estação SP-3300 Pró é o equipamento principal. Quando preferir, use a alternativa equivalente indicada. Faça 5–8 minutos de aquecimento leve e uma série preparatória antes dos exercícios mais exigentes.</p><div class="actions"><button class="btn" onclick="selectWorkout('A')">Treino A</button><button class="btn secondary" onclick="selectWorkout('B')">Treino B</button></div><div id="workoutArea"></div></div>
+</section>
+<section id="bike" class="panel">
+<div class="card"><h2>Registro de bicicleta</h2><p class="muted">Use ritmo confortável, no qual consiga conversar. Comece leve; evite sessões intensas no dia anterior a um treino de pernas.</p>
+<div class="grid"><div class="field"><label>Data</label><input type="date" id="bikeDate"></div><div class="field"><label>Duração (minutos)</label><input type="number" min="1" id="bikeMinutes" placeholder="20"></div><div class="field"><label>Distância (km, opcional)</label><input type="number" min="0" step=".1" id="bikeKm" placeholder="5.0"></div><div class="field"><label>Esforço percebido (1–10)</label><select id="bikeEffort"><option value="3">3 — leve</option><option value="4" selected>4 — moderado leve</option><option value="5">5 — moderado</option><option value="6">6 — um pouco intenso</option></select></div></div>
+<div class="field"><label>Observações</label><textarea id="bikeNotes" placeholder="Como se sentiu?"></textarea></div><button class="btn" onclick="saveBike()">Salvar pedalada</button></div>
+<div class="card"><h3>Progressão sugerida</h3><p class="muted">Semanas 1–2: 15–20 min leves, 1–2 vezes por ciclo. Semanas 3–4: 20–25 min. Semanas 5–8: 25–30 min. Semanas 9–12: 25–35 min, mantendo esforço confortável. Ajuste para baixo se prejudicar a recuperação.</p></div></section>
+<section id="avaliacao" class="panel">
+<div class="card"><h2>Avaliação corporal</h2><p class="muted">Registre os dados atuais. Para comparar, tente medir nas mesmas condições e aproximadamente no mesmo horário.</p>
+<div class="grid">
+<div class="field"><label>Data</label><input type="date" id="evalDate"></div><div class="field"><label>Peso (kg)</label><input type="number" step=".1" id="weight" placeholder="Ex.: 78.5"></div>
+<div class="field"><label>Altura (cm)</label><input type="number" step=".1" id="height" placeholder="Ex.: 172"></div><div class="field"><label>Cintura (cm)</label><input type="number" step=".1" id="waist" placeholder="Opcional"></div>
+<div class="field"><label>Abdômen (cm)</label><input type="number" step=".1" id="abdomen" placeholder="Opcional"></div><div class="field"><label>Quadril (cm)</label><input type="number" step=".1" id="hip" placeholder="Opcional"></div>
+<div class="field"><label>Peito (cm)</label><input type="number" step=".1" id="chest" placeholder="Opcional"></div><div class="field"><label>Braço (cm)</label><input type="number" step=".1" id="arm" placeholder="Opcional"></div>
+<div class="field"><label>Coxa (cm)</label><input type="number" step=".1" id="thigh" placeholder="Opcional"></div><div class="field"><label>Panturrilha (cm)</label><input type="number" step=".1" id="calf" placeholder="Opcional"></div></div>
+<div class="field"><label>Observações / como está se sentindo</label><textarea id="evalNotes"></textarea></div><button class="btn" onclick="saveEvaluation()">Salvar avaliação</button><div id="bmiResult" class="muted" style="margin-top:10px"></div></div>
+<div class="card"><h3>Teste prático de início</h3><p class="muted">Não é teste máximo. Anote as cargas leves/moderadas que consegue controlar com técnica e sem dor. A primeira sessão serve para calibrar os pesos.</p><div class="field"><label>Referência de carga e repetições</label><textarea id="baseline" placeholder="Ex.: supino na estação — 15 kg, 12 repetições confortáveis."></textarea></div><button class="btn secondary" onclick="saveBaseline()">Salvar referência</button></div>
+</section>
+<section id="historico" class="panel">
+<div class="card"><h2>Histórico de treinos</h2><div id="workoutHistory" class="muted">Nenhum treino registrado.</div></div>
+<div class="card"><h2>Histórico de avaliações</h2><div id="evalHistory" class="muted">Nenhuma avaliação registrada.</div></div>
+<div class="card"><h2>Histórico de bicicleta</h2><div id="bikeHistory" class="muted">Nenhuma pedalada registrada.</div></div>
+</section>
+<section id="backup" class="panel">
+<div class="card"><h2>Backup e restauração</h2><p class="muted">Os dados ficam salvos neste dispositivo e neste endereço. Exporte um backup regularmente, especialmente antes de atualizar o aplicativo ou trocar de aparelho.</p><div class="actions"><button class="btn" onclick="exportBackup()">Exportar backup</button><label class="btn secondary" for="importFile">Importar backup</label><input id="importFile" type="file" accept="application/json,.json" hidden onchange="importBackup(event)"></div></div>
+<div class="card"><h3>Reiniciar ciclo</h3><p class="muted">Use apenas se quiser recomeçar a sequência A/B. Isso não apaga o histórico.</p><button class="btn danger" onclick="resetCycle()">Reiniciar sequência</button></div>
+</section>
+<footer>Minha Ficha SP-3300 Pró · Fase 2 · Seus registros permanecem neste dispositivo.</footer>
+</div>
+<script>
+const KEY='sp3300_fase2_v1';
+const today=()=>new Date().toISOString().slice(0,10);
+let data=load();
+function load(){try{return JSON.parse(localStorage.getItem(KEY))||{workouts:[],evaluations:[],bikes:[],next:'A',start:today(),baseline:''}}catch(e){return {workouts:[],evaluations:[],bikes:[],next:'A',start:today(),baseline:''}}}
+function persist(){localStorage.setItem(KEY,JSON.stringify(data));renderHome();renderHistory()}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+const plans={
+A:[
+['Agachamento na estação / cadeira','Pernas','2–3 × 8–12','Mesa romana/extensora como complemento; alternativa: agachamento com peso corporal ou halter.','Pés firmes, joelhos acompanham a direção dos pés, desça apenas até onde mantém controle.'],
+['Supino na estação','Peitoral','2–3 × 8–12','Banco regulável e braços de pressão; alternativa: flexão inclinada ou supino com halteres.','Escápulas apoiadas, punhos alinhados, desça sem forçar o ombro e expire ao empurrar.'],
+['Puxada alta pela frente','Costas','2–3 × 8–12','Torre de puxada; alternativa: puxada em polia alta.','Puxe em direção à parte alta do peito, sem jogar o tronco para trás nem puxar atrás da nuca.'],
+['Flexora / posterior de coxa','Posterior','2 × 10–15','Mesa romana se a configuração permitir; alternativa: ponte de quadril ou flexão de joelhos com bola/toalha.','Movimento lento, sem impulso; ajuste o eixo da máquina ao joelho.'],
+['Desenvolvimento de ombros','Ombros','2 × 8–12','Com halteres leves ou máquina apropriada; não force amplitude.','Mantenha abdômen firme e evite arquear a lombar.'],
+['Rosca Scott','Bíceps','2 × 10–15','Apoio Scott da estação; alternativa: rosca com halteres.','Cotovelos apoiados, suba sem balanço e desça controlando.'],
+['Tríceps na polia','Tríceps','2 × 10–15','Torre de cabos; alternativa: extensão com elástico.','Cotovelos próximos ao tronco, ombros relaxados e sem inclinar o corpo.'],
+['Prancha','Core','2 × 15–30 s','No solo; alternativa: prancha inclinada apoiada em banco.','Corpo alinhado, respiração contínua; pare antes de perder a postura.']
+],
+B:[
+['Levantamento terra romeno leve','Posterior/glúteos','2–3 × 8–12','Com halteres ou barra leve; alternativa: dobradiça de quadril sem carga.','Quadril vai para trás, coluna neutra, carga próxima ao corpo; amplitude sem arredondar as costas.'],
+['Supino inclinado ou crucifixo controlado','Peitoral','2–3 × 8–12','Banco regulável/halteres; alternativa: flexão com mãos elevadas.','Use amplitude confortável, ombros estáveis e movimento controlado.'],
+['Remada baixa','Costas','2–3 × 8–12','Polia baixa da estação, se disponível; alternativa: remada unilateral com halter.','Puxe cotovelos para trás, sem encolher ombros ou balançar o tronco.'],
+['Extensora','Quadríceps','2 × 10–15','Mesa romana; alternativa: sentar e levantar de cadeira ou agachamento curto.','Alinhe eixo ao joelho e evite chutar a carga.'],
+['Elevação lateral','Ombros','2 × 10–15','Halteres leves ou elástico.','Suba até próximo da altura dos ombros, sem impulso.'],
+['Rosca de bíceps','Bíceps','2 × 10–15','Barra curta/halteres ou polia baixa.','Cotovelos estáveis e sem balanço do tronco.'],
+['Extensão de tríceps acima da cabeça','Tríceps','2 × 10–15','Cabo ou halter leve; alternativa: extensão com elástico.','Mantenha costelas controladas e use amplitude sem desconforto.'],
+['Dead bug','Core','2 × 8–10 por lado','No solo.','Lombar estável, mova braço e perna opostos lentamente.']
+]};
+function showTab(id){document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.id===id));document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active',b.dataset.tab===id));if(id==='historico')renderHistory()}
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>showTab(b.dataset.tab)));
+let chosen='A';
+function artFor(name){
+ const n=name.toLowerCase();
+ const kind=n.includes('supino')||n.includes('crucifixo')||n.includes('flexão')?'push':n.includes('puxada')||n.includes('remada')?'pull':n.includes('agachamento')||n.includes('extensora')||n.includes('terra')||n.includes('flexora')?'legs':n.includes('prancha')||n.includes('dead bug')?'core':n.includes('rosca')?'curl':n.includes('tríceps')?'arms':'shoulders';
+ let equip=kind==='push'?'<path d="M38 80 H192 M52 80 V98 M178 80 V98" stroke="#79c99b" stroke-width="5" fill="none"/>':kind==='pull'?'<path d="M35 15 V105 M195 15 V105 M35 18 H195 M72 20 V45 M158 20 V45" stroke="#79c99b" stroke-width="4" fill="none"/>':kind==='legs'?'<path d="M85 102 L65 112 M145 102 L165 112 M62 112 H168" stroke="#79c99b" stroke-width="5" fill="none"/>':kind==='core'?'<path d="M55 105 H175" stroke="#79c99b" stroke-width="5"/>':'<path d="M75 45 L55 35 M155 45 L175 35 M55 35 V22 M175 35 V22" stroke="#79c99b" stroke-width="5" fill="none"/>';
+ return `<div class="exercise-art" aria-label="Ilustração esquemática do movimento"><svg viewBox="0 0 230 120" role="img">${equip}<circle cx="115" cy="25" r="12" fill="#9ee0b3"/><path d="M115 39 L115 75 M115 49 L78 43 M115 49 L152 43 M115 75 L90 104 M115 75 L140 104" stroke="#b9ebc8" stroke-width="8" stroke-linecap="round" fill="none"/></svg></div>`;
+}
+function recommendation(w,name){
+ let prev=data.workouts.find(x=>x.type===w&&x.entries.some(e=>e.exercise===name&&e.load));
+ if(!prev)return 'Primeiro registro: comece leve/moderado, dentro da faixa de repetições, terminando com 2–3 repetições possíveis na reserva.';
+ let e=prev.entries.find(x=>x.exercise===name),load=parseFloat(String(e.load).replace(',','.')),reps=Number(e.reps),sets=Number(e.sets),rir=Number(e.rir);
+ if(!load||!reps||!sets)return 'Registro anterior incompleto. Repita a carga confortável e registre séries, repetições e RIR.';
+ const target=plans[w].find(x=>x[0]===name)?.[2]||'';const bounds=target.match(/(\\d+)\\s*[–-]\\s*(\\d+)/);const top=bounds?Number(bounds[2]):12;if(reps>=top&&sets>=2&&rir>=2)return `Último registro: ${load} kg × ${sets} séries × ${reps} reps. Se todas as séries chegaram ao topo da faixa com técnica limpa, teste o menor aumento disponível (cerca de 2–5%).`;
+ if(reps<8||rir<=0)return `Último registro: ${load} kg × ${sets} séries × ${reps} reps. Se houve falha ou perda de técnica, reduza aproximadamente 5–10% ou mantenha até controlar melhor.`;
+ return `Último registro: ${load} kg × ${sets} séries × ${reps} reps. Mantenha a carga e tente acrescentar 1 repetição por série sem perder a técnica.`;
+}
+function selectWorkout(w){chosen=w;const arr=plans[w];document.getElementById('workoutArea').innerHTML=`<h3 style="margin-top:15px">Treino ${w}</h3><p class="muted">Mantenha 2–3 repetições na reserva (RIR 2–3). Descanse 60–120 segundos, ou mais se necessário. A ilustração é esquemática; siga também as instruções escritas.</p>`+arr.map((e,i)=>`<div class="exercise"><div class="exhead"><div><b>${i+1}. ${e[0]}</b><div class="smallmuted">${e[1]}</div></div><span class="tag">${e[2]}</span></div>${artFor(e[0])}<p><b>Na SP-3300 / alternativa:</b> ${e[3]}</p><details><summary>Ver orientação de execução</summary><p>${e[4]}</p></details><div class="load-tip"><b>Ajuste de carga:</b> ${recommendation(w,e[0])}</div><label class="check"><input type="checkbox" id="done${i}"> Concluído</label><div class="logrow" style="margin-top:8px"><input id="load${i}" placeholder="Carga (kg)" inputmode="decimal"><input id="reps${i}" placeholder="Reps por série" inputmode="numeric"><input id="sets${i}" placeholder="Séries" inputmode="numeric"><input id="rir${i}" placeholder="RIR 0–5" inputmode="numeric"></div></div>`).join('')+`<div class="field"><label>Observações desta sessão</label><textarea id="sessionNotes" placeholder="Disposição, dificuldade, desconfortos..."></textarea></div><button class="btn" onclick="saveWorkout('${w}')">Salvar treino ${w}</button>`;
+}
+function saveWorkout(w){let entries=plans[w].map((e,i)=>({exercise:e[0],done:document.getElementById('done'+i).checked,load:document.getElementById('load'+i).value,reps:document.getElementById('reps'+i).value,sets:document.getElementById('sets'+i).value,rir:document.getElementById('rir'+i).value}));data.workouts.unshift({id:crypto.randomUUID?crypto.randomUUID():String(Date.now()),date:today(),type:w,entries,notes:document.getElementById('sessionNotes').value});data.next=w==='A'?'B':'A';persist();alert('Treino salvo! Próxima sessão: '+data.next+'. Faça um dia de recuperação antes dela.');showTab('inicio')}
+function renderHome(){document.getElementById('nextSession').textContent='Treino '+(data.next||'A');let start=new Date(data.start||today()),days=Math.max(0,Math.floor((new Date(today())-start)/86400000)),week=Math.min(12,Math.floor(days/7)+1);document.getElementById('weekNow').textContent=week+' / 12';document.getElementById('weekProgress').style.width=(week/12*100)+'%';document.getElementById('cycleHint').textContent='Próxima sessão: Treino '+(data.next||'A')+'. Após salvar, faça pelo menos um dia sem musculação.'}
+function saveBike(){let m=Number(document.getElementById('bikeMinutes').value);if(!m||m<1){alert('Informe a duração da pedalada.');return}data.bikes.unshift({id:String(Date.now()),date:document.getElementById('bikeDate').value||today(),minutes:m,km:document.getElementById('bikeKm').value,effort:document.getElementById('bikeEffort').value,notes:document.getElementById('bikeNotes').value});persist();['bikeMinutes','bikeKm','bikeNotes'].forEach(id=>document.getElementById(id).value='');alert('Pedalada registrada!')}
+function saveEvaluation(){let obj={id:String(Date.now()),date:document.getElementById('evalDate').value||today()};['weight','height','waist','abdomen','hip','chest','arm','thigh','calf'].forEach(k=>obj[k]=document.getElementById(k).value);obj.notes=document.getElementById('evalNotes').value;if(!obj.weight&&!obj.waist&&!obj.abdomen){alert('Informe pelo menos o peso ou uma medida.');return}data.evaluations.unshift(obj);persist();let h=Number(obj.height),w=Number(obj.weight);document.getElementById('bmiResult').textContent=h>0&&w>0?'IMC calculado: '+(w/((h/100)**2)).toFixed(1)+' (indicador geral; não diferencia massa muscular de gordura).':'Avaliação salva.';alert('Avaliação salva!')}
+function saveBaseline(){data.baseline=document.getElementById('baseline').value;persist();alert('Referência salva.')}
+function removeItem(type,id){if(!confirm('Excluir somente este registro? Esta ação não pode ser desfeita.'))return;data[type]=data[type].filter(x=>x.id!==id);persist()}
+function renderList(items,type,format,empty){let el=document.getElementById(type==='workouts'?'workoutHistory':type==='evaluations'?'evalHistory':'bikeHistory');if(!items.length){el.textContent=empty;return}el.innerHTML=items.map(x=>`<div class="history"><div>${format(x)}</div><button class="btn danger small" onclick="removeItem('${type}','${x.id}')">Excluir</button></div>`).join('')}
+function renderHistory(){renderList(data.workouts,'workouts',x=>`<b>${x.date} · Treino ${x.type}</b><p>${x.entries.filter(e=>e.done).length}/${x.entries.length} exercícios marcados como concluídos</p><p class="smallmuted">${esc(x.notes)}</p>`,'Nenhum treino registrado.');renderList(data.evaluations,'evaluations',x=>`<b>${x.date}</b><p>${x.weight?esc(x.weight)+' kg':''}${x.waist?' · Cintura '+esc(x.waist)+' cm':''}${x.abdomen?' · Abdômen '+esc(x.abdomen)+' cm':''}</p>`,'Nenhuma avaliação registrada.');renderList(data.bikes,'bikes',x=>`<b>${x.date} · ${x.minutes} min</b><p>${x.km?esc(x.km)+' km · ':''}Esforço ${esc(x.effort)}/10</p>`,'Nenhuma pedalada registrada.')}
+function exportBackup(){let blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}),a=document.createElement('a'),url=URL.createObjectURL(blob);a.href=url;a.download='backup-minha-ficha-fase2-'+today()+'.json';a.click();URL.revokeObjectURL(url)}
+function importBackup(ev){let f=ev.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{let v=JSON.parse(r.result);if(!v||!Array.isArray(v.workouts)||!Array.isArray(v.evaluations)||!Array.isArray(v.bikes))throw Error();if(!confirm('Importar este backup e substituir os dados atuais da Fase 2?'))return;data=v;persist();alert('Backup importado.')}catch(e){alert('Arquivo inválido ou incompatível.')}ev.target.value=''};r.readAsText(f)}
+function resetCycle(){if(!confirm('Reiniciar a sequência para o Treino A? O histórico será mantido.'))return;data.next='A';data.start=today();persist()}
+document.getElementById('bikeDate').value=today();document.getElementById('evalDate').value=today();selectWorkout('A');renderHome();renderHistory();document.getElementById('baseline').value=data.baseline||'';
+if('serviceWorker' in navigator && location.protocol!=='file:'){window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js').catch(()=>{}))}
+</script>
+</body></html>
